@@ -62,8 +62,8 @@ nav {
 .intro-text h1 {
 	font-size: 44px;
 	font-weight: 500;
-	background: linear-gradient(to right, #494964, #6f6f89);
-	-webkit-background-clip: text;
+	background: linear-gradient(to right, #494964, #6f6f89);/*배경색 옅어지게*/
+	-webkit-background-clip: text;/*배경색을 텍스트에 넣음*/
 	-webkit-text-fill-color: transparent;
 }
 .intro-text p {
