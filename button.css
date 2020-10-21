@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    background: lightblue;
+    margin: 10px;
+    height: 10rem;
+}
