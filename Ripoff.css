@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.top{
+    position: absolute;
+    left: -50%;
+    top: -5%;
+    width: 100%;
+    height: 110vh;
+    background: crimson;
+    border-radius: 10px;
+    animation: top-down 1s ease;
+}
+.bottom{
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: -5%;
+    width: 100%;
+    height: 110vh;
+    background: skyblue;
+    border-radius: 10px;
+    animation: bottom-up 1s ease;
+}
+@keyframes top-down{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+@keyframes bottom-up{
+    from{
+        transform: translateY(100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+@keyframes sizeup{
+    0%{
+        transform: scale(0,0);
+    }
+    10%{
+        transform: scale(0,0);
+        background: cornflowerblue;
+    }
+    100%{
+        transform: scale(3,3);
+    }
+}
+.boom{
+    position: absolute;
+    z-index: 2;
+    height: 100vh;
+    width: 100vh;
+    background: cornflowerblue;
+    animation: sizeup 2s ease;
+    animation-fill-mode: forwards;
+    border-radius: 50%;
+}
+.mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: white;
+}
+button{
+    width: 100px;
+    height: 50px;
+}
