@@ -1,0 +1,17 @@
+.noodle{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+.noodle-background{
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+}
+.chopsticks{
+    position: absolute;
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+}
