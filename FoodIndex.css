@@ -36,20 +36,56 @@ nav ul li{
     flex: 1;
     text-align: center;
 }
-li span::after{
+li span:hover{
+    cursor: pointer;
+    transition: 0.1s;
     padding: 0px 3px 0px 3px;
     background: #fdc23e;
     border-bottom: 2px solid black;
 }
-.dish{
+#dish, #brocolli, #carrot, #chocolate, #donut, #egg, #pepper, #tomato, #potato{
     position: absolute;
-    left: 50%;
-    top: 50%;
     transform: translate(-50%, -50%);
     height: 600px;
 }
-.dish img{
+#dish img, #brocolli img, #carrot img, #chocolate img, #donut img, #egg img, #pepper img, #potato img, #tomato img{
     height: 100%;
+}
+#dish{
+    left: calc(52% - var(--x)/40);
+    top: calc(55% - var(--y)/40);
+}
+#brocolli{
+    left: calc(50% + var(--x)/70);
+    top: calc(53% + var(--y)/70);
+}
+#carrot{
+    left: calc(57% + var(--x)/40);
+    top: calc(55% - var(--y)/50);
+}
+#chocolate{
+    left: calc(40% - var(--x)/60);
+    top: calc(60% + var(--y)/50);
+}
+#donut{
+    left: calc(59% + var(--x)/30);
+    top: calc(53% + var(--y)/30);
+}
+#egg{
+    left: calc(35% + var(--x)/30);
+    top: calc(45% + var(--y)/30);
+}
+#pepper{
+    left: calc(52% + var(--x)/45);
+    top: calc(55% + var(--y)/65);
+}
+#tomato{
+    left: calc(40% - var(--x)/20);
+    top: calc(60% + var(--y)/35);
+}
+#potato{
+    left: calc(60% + var(--x)/30);
+    top: calc(45% + var(--y)/20);
 }
 .logo{
     flex: 2;

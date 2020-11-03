@@ -28,11 +28,44 @@
     </header>
     <main>
         <div class="main">
-            <div class="dish">
+            <div id="dish">
                 <img src="images/dish.png">
             </div>
-
+            <div id="brocolli">
+                <img src="images/brocolli.png">
+            </div>
+            <div id="carrot">
+                <img src="images/carrot.png">
+            </div>
+            <div id="chocolate">
+                <img src="images/chocolate.png">
+            </div>
+            <div id="donut">
+                <img src="images/donut.png">
+            </div>
+            <div id="egg">
+                <img src="images/egg.png">
+            </div>
+            <div id="pepper">
+                <img src="images/pepper.png">
+            </div>
+            <div id="tomato">
+                <img src="images/tomato.png">
+            </div>
+            <div id="potato">
+                <img src="images/potato.png">
+            </div>
         </div>
     </main>
+
+    <script type="text/javascript">
+        var position = document.documentElement;
+        var dish = document.getElementById("dish");
+        position.addEventListener("mousemove",e=>{
+            position.style.setProperty('--x',e.clientX+"px");
+            position.style.setProperty('--y',e.clientY+"px");
+        })
+
+    </script>
 </body>
 </html>
